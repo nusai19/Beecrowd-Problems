@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int add(int x, int y) {
+    return x + y;
+}
+
+int main() {
+    int X, Y;
+
+    cin >> X >> Y;
+
+    cout << add(X, Y);
+
+    return 0;
+}
+

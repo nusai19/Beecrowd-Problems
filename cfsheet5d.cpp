@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+bool isPrime(long long n) {
+    if (n <= 1)
+        return false;
+
+    for (long long i = 2; i * i <= n; i++) {
+        if (n % i == 0)
+            return false;
+    }
+    return true;
+}
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        long long N;
+        cin >> N;
+
+        if (isPrime(N))
+            cout << "YES\n";
+        else
+            cout << "NO\n";
+    }
+
+    return 0;
+}
+
